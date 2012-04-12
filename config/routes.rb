@@ -1,4 +1,10 @@
 SampleApp::Application.routes.draw do
+  
+  #Det som står eter get är en del av URL:en, efter själva sitenamnamnet.
+  get "pages/home" # get - arrange for the route to respond to a GET request
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
