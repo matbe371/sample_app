@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
-    <%= csrf_meta_tag %> <!--Security feature against cross-site request forgery-->
+    <title><%= title %></title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %> <!--Rendrerar ut app/views/layouts/_stylesheets.html.erb-->
   </head>
   <body>
-    <%= yield %> <!--Laddar innehåll till mainlayout-->
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <section class="round">
+        <%= yield %>
+      </section>
+      <%= render 'layouts/footer'%>
+    </div>
   </body>
 </html>
