@@ -25,6 +25,7 @@ gem 'jquery-rails'
 #inkluderar access till RSpec-generatorer, som behövs vid testning
 group :developement do 
   gem 'rspec-rails', '2.6.1'
+  gem 'annotate', '2.4.0' #ger automatiska noteringar när man skapar nya modeller. 
 end 
 
 #inkluderar access till RSpec-generatorer, som behövs vid testning

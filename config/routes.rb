@@ -1,10 +1,13 @@
 SampleApp::Application.routes.draw do #Den här filen sköter all URL-mappning på sidan.
   
+  #Resurser, för att visa användarsidan
+  resources :users
+  
   #Det som står eter get är en del av URL:en, efter själva sitenamnamnet.
   get "pages/home" # get - arrange for the route to respond to a GET request
   get "pages/contact"
   get "pages/about"
-  get "users/new"
+  #get "users/new"
   
   #Custom routes for the contact, about, and help pages. match url, :to => 'controller_name#action'
   match '/contact', :to => 'pages#contact'
