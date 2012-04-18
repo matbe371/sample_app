@@ -1,6 +1,6 @@
 SampleApp::Application.routes.draw do #Den här filen sköter all URL-mappning på sidan.
   
-  #Resurser, för att visa användarsidan
+  #Resurser, för att visa användarsidan ex. users/1
   resources :users
   
   #Det som står eter get är en del av URL:en, efter själva sitenamnamnet.

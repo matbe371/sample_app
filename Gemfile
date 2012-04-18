@@ -7,6 +7,8 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3'
 
+#Gem för avatarbild.
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -32,6 +34,7 @@ end
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
+  gem 'factory_girl_rails', '1.0'
 end
 
 # To use ActiveModel has_secure_password
